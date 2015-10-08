@@ -29,7 +29,7 @@
 
 <body>
     <div id="container" class="container">
-        <div class="menu-panel">
+        <div class="menu-panel" id="menu">
             <h3>Contents</h3>
             <ul class="menu-toc">
                 <li><a href="#wildlife" class="smoothScroll">Wildlife</a></li>
@@ -91,11 +91,6 @@
             <a href="#top" class="smoothScroll">Back to the top &raquo;</a>
         </footer>
 
-        <nav>
-            <span id="bb-nav-prev">&larr;</span>
-            <span id="bb-nav-next">&rarr;</span>
-        </nav>
-
         <span id="tblcontents" class="menu-button">Table of Contents</span>
 
     </div>
@@ -107,12 +102,16 @@
     <script src="js/page.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/konami.js"></script>
     <script>
         $(function () {
 
             Page.init();
 
         });
+    </script>
+    <script>
+        var easter_egg = new Konami('yodel.html');
     </script>
 
 </body>
